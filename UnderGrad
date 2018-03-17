@@ -1,0 +1,22 @@
+package student;
+
+public class UnderGrad extends Student 
+{
+    public UnderGrad()
+    {
+        super();
+    }
+    
+    public UnderGrad(String studName, int [] studTests, String studGrades)
+    {
+        super(studName, studTests, studGrades);
+    }
+    
+    public void computerGrade()
+    {
+        if(getTestAverage() >= 70)
+            setGrade("Pass");
+        else
+            setGrade("Fail");
+    }
+}
